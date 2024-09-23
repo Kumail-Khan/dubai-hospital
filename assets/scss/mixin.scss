@@ -1,0 +1,64 @@
+@mixin button-1{
+    margin-top: 30px;
+    background-color:#FFFFE4 ;
+    border-radius: 40px;
+    width: 210px;
+    padding: 13px;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+        width: 230px;
+        transition: 0.3s;
+    }
+    span{
+        font-size: 15px;
+        font-weight: 450;
+        margin-left: 10px;
+    }
+    img{
+        margin-left: 40px;
+        width: 32px;
+        height: 32px;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 9px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@mixin cursor-1{
+    img{
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #E3DEB5;
+        cursor: pointer;
+    }
+}
+
+@mixin articles{
+    background-color: white;
+    z-index: 1;
+    width: 370px;
+    height: 390px;
+    border-bottom: 5px solid #367C2B;
+    img{
+        width: 370px;
+    }
+    .article-info{
+        padding: 30px;
+        h3{
+            font-size: 12px;
+            color: #367C2B;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+    }
+}
